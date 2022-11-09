@@ -191,7 +191,32 @@ bg {
 }
 
 
-/*  */
+/* 홈 화면에 각 항목마다 뜨게 할 것들 - 제목 */
+.Home_container__BnSLY {
+    height:100%
+}
+
+.Home_slide__box__2nZbd {
+    padding:0 0 40px
+}
+
+.Home_title__3hjMQ {
+    text-align: center;
+    font-size:42px
+}
+
+.Home_title__3hjMQ a {
+    color: #fff;
+    text-decoration:none
+}
+
+.Home_title__3hjMQ a:hover {
+    text-decoration:underline
+}
+
+.Home_title__3hjMQ a i {
+    margin-right:20px
+}
 
 
 
