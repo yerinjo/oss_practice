@@ -1,0 +1,195 @@
+/* 좌측상단 팀명 or 웹페이지이름  */
+h1 {
+    font-size: 40px;
+    background: linear-gradient(to right rop, #00bfff,#9400d3);
+    /* 다크 스카이블루(왼)->다크바이올렛(오) */
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* background */ 
+bg {
+    color: #323232;
+    position: fixed;
+    top:0;
+    left: 0;
+    min-width:100%;
+    min-height: 100;
+    filter:brightness(40%)
+}
+
+
+/* 상단 네비게이터 */
+:root {
+    --green-color-3: #41227f;
+    --green-color-2: #dcb0ff;
+    --green-color-1:#faccff
+}
+
+ 
+.Nav_container__1WT4L {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 64px;
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition:.4s ease
+}
+
+ 
+
+.Nav_container__1WT4L a {
+    text-decoration:none
+}
+
+
+.Nav_container__1WT4L ul {
+    padding: 0;
+    list-style:none
+}
+
+
+.Nav_title__3dTk1 {
+    display: flex;
+    align-items:center
+}
+
+
+.Nav_title__3dTk1 i {
+    margin:0 8px 0 0
+} 
+
+.Nav_title__3dTk1 i, .Nav_title__3dTk1 strong {
+    font-size: 32px;
+    color: #faccff;
+    color:var(--green-color-1)
+}
+
+.Nav_title__3dTk1 strong {
+    letter-spacing:.5px
+}
+ 
+
+.Nav_option__list__pzeUi {
+    display:flex
+}
+
+
+.Nav_option__list__pzeUi li a {
+    font-size: 16px;
+    padding: 4px 12px;
+    color: #faccff;
+    color:var(--green-color-1)
+}
+
+.Nav_option__list__pzeUi li a:hover {
+    cursor: pointer;
+    color: #dcb0ff;
+    color:var(--green-color-2)
+}
+
+
+.Nav_icon__list__2mIpC {
+    display:flex
+}
+
+
+.Nav_icon__list__2mIpC li {
+    font-size: 24px;
+    padding:4px 8px
+}
+
+
+.Nav_icon__list__2mIpC li a {
+    color: #faccff;
+    color:var(--green-color-1)
+}
+
+
+.Nav_null__3XYc8 {
+    width: 100%;
+    height:100px
+}
+
+ 
+
+@media screen and (max-width: 1090px) {
+    .Nav_option__list__pzeUi {
+        display:none
+    }
+}
+
+
+/* 영화선택 후 */
+.Movie_movie__2hWhs {
+    background-color: #fef7ff;
+    margin-bottom: 70px;
+    font-weight: 300;
+    padding: 20px;
+    border-radius: 5px;
+    color: #adaeb9;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+    grid-gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+    transition:all .4s ease
+}
+
+.Movie_movie__2hWhs > * {
+    color:#4b4453
+}
+
+.Movie_movie__2hWhs:hover {
+    transform: translateY(-10px);
+    box-shadow:0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22)
+}
+
+.Movie_movie__img__3KNb7 {
+    position: relative;
+    top: -50px;
+    max-width: 150px;
+    width: 100%;
+    margin-right: 30px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .3), 0 -12px 36px -8px rgba(0, 0, 0, .025);
+    transition:all .4s ease
+}
+
+.Movie_movie__title__2nSV9, .Movie_movie__year__OcxVr {
+    margin: 0;
+    font-weight: 300;
+    text-decoration:none
+}
+
+.Movie_movie__title__2nSV9 a {
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #2c2c2c;
+    text-decoration:none
+}
+
+.Movie_movie__title__2nSV9:hover {
+    text-decoration:underline
+}
+
+.Movie_movie__genres__1zV5l {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin:5px 0
+}
+
+.Movie_movie__genres__1zV5l li, .Movie_movie__year__OcxVr {
+    margin-right: 10px;
+    font-size:14px
+}
+
+
+
+
