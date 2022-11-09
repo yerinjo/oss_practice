@@ -1,0 +1,242 @@
+/* 1. 이미지 슬라이드 효과  */
+/* 출처: (https://13akstjq.github.io/css/2019/08/13/이미지슬라이더-만들기.html) */
+.Wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* overflow: hidden; */
+  }
+  .imageContainer {
+    display: flex;
+    transition: 0.6s;
+  }
+  .image {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .left {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    cursor: pointer;
+  }
+  
+  .right {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    cursor: pointer;
+  }
+  svg {
+    z-index: 2;
+    color: rgba(0, 0, 0, 0.2);
+  }
+  .hidden {
+    display: hidden;
+  }
+   
+  
+  /* 2. 슬라이더 양옆 버튼 추가된 버전 -> 출처: https://codepen.io/kimyangsun/pen/XWJeJVj) ,,JS 파일로도 게시되어있음*/
+  /* 슬라이더 1 시작 */
+  
+  .slider-1 {
+      height:400px;
+      position:relative;
+  }
+  
+   
+  
+  /* 슬라이더 1 - 페이지 버튼 */
+  .slider-1 > .page-btns {
+      text-align:center;
+      position:absolute;
+      bottom:20px;
+      left:0;
+      width:100%;
+  }
+  
+   
+  
+  .slider-1 > .page-btns > div {
+      width:20px;
+      height:20px;
+      background-color:rgba(255,255,255,.5);
+      border-radius:4px;
+      display:inline-block;
+      cursor:pointer;
+  }
+  
+   
+  
+  .slider-1 > .page-btns > div.active {
+      background-color:rgba(255,255,255,1);
+  }
+  
+   
+  
+  /* 슬라이더 1 - 슬라이드 */
+  .slider-1 > .slides > div {
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      opacity:0;
+      transition: opacity 0.3s;
+      background-position:center;
+      background-size:cover;
+      background-repeat:no-repeat;
+  }
+  
+   
+  
+  .slider-1 > .slides > div.active {
+      opacity:1;
+  }
+  
+   
+  
+  /* 슬라이더 좌우 버튼 */
+  .slider-1 > .side-btns > div {
+      position:absolute;
+      top:0;
+      left:0;
+      width:25%;
+      height:100%;
+      cursor:pointer;
+  }
+  
+  .slider-1 > .side-btns > div:last-child {
+      left:auto;
+      right:0;
+  }
+  
+  .slider-1 >.side-btns > div > span {
+      position:absolute;
+      top:50%;
+      left:20px;
+      transform:translatey(-50%);
+      background-color:white;
+      padding:1px 13px;
+      border-radius:50px;
+      font-size:25px;
+  
+  }
+  
+  .slider-1 >.side-btns > div:last-child > span {
+      left:auto;
+      right:20px;
+  }
+  
+  /* 슬라이더 1 끝 */
+
+
+  /* 3. 슬라이드 효과 */
+  .Slide_container__jWOL6 {
+    position:relative
+}
+
+.Slide_slide__show__2bDMM {
+    width: 1050px;
+    overflow: hidden;
+    position: relative;
+    left:calc(50% - 525px)
+}
+
+.Slide_slide__1ai46 {
+    width: 3500px;
+    padding: 50px 0 0;
+    display: flex;
+    transition:all .4s ease
+}
+
+.Slide_left__1gi0t, .Slide_right__3HX6w {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #00d2fc;
+    opacity: .8;
+    font-size: 44px;
+    transition:all .4s
+}
+
+.Slide_left__1gi0t:hover, .Slide_right__3HX6w:hover {
+    cursor: pointer;
+    transform:scale(1.1)
+}
+
+.Slide_left__1gi0t {
+    text-shadow: 3px 2px 0 #009efa;
+    position: absolute;
+    top: calc(50% - 22px);
+    left:80px
+}
+
+.Slide_right__3HX6w {
+    text-shadow: -3px 2px 0 #009efa;
+    position: absolute;
+    top: calc(50% - 22px);
+    right:80px
+}
+
+.List_container__fGWYl {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position:relative
+}
+
+.List_loader__2_PmQ {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    color:#fff
+}
+
+.List_movies__2cCAa {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-gap: 100px;
+    width: 80%;
+    padding:70px 50px 50px
+}
+
+.List_footer__10aTI {
+    position: absolute;
+    bottom: 15px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items:center
+}
+
+.List_footer__10aTI li a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    text-shadow: 3px 2px 0 #b1bdc5;
+    color:#fff
+}
+
+.List_footer__10aTI li .List_focusing__2yQVL {
+    color:#dadde2
+}
+
+.List_footer__10aTI li a:hover {
+    cursor: pointer;
+    color:#dadde2
+}
+
+@media screen and (max-width: 1090px) {
+    .List_movies__2cCAa {
+        grid-template-columns: 1fr;
+        width:100%
+    }
+}
