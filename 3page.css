@@ -6,7 +6,7 @@ nav{width:80%;overflow:hidden;height:80px;background-color:#1b2035;margin:50px a
 
 #nav3 {
     width: 100%;
-    position: relative;
+    position: fixed;
     text-align: center;
   }
   #nav3>a {
@@ -39,10 +39,9 @@ nav{width:80%;overflow:hidden;height:80px;background-color:#1b2035;margin:50px a
   }
   
 
-title>a{
+/* title{
     font-size: 45px;
     background: linear-gradient(to right top, #00bfff,#9400d3 );
     color: transparent;
-    
-}
+} */
 
