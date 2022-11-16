@@ -7,41 +7,42 @@
         <meta name="description" content="searching movie"/>
         <link href="/Users/yerin/Desktop/22_2_OSS/html_css_javascript/oss_practice/3page.css" rel="stylesheet">
 
-        <!-- 상단 내비게이터 -->
-        <nav id="nav3">
-          <a href="#" class="topic">My Movie</a>
-          <ul>
-            <li><a href="#">Popular</a></li>
-            <li><a href="#">Animation</a></li>
-            <li><a href="#">Romance</a></li>
-            <li><a href="#">Science Fiction</a></li>
-            <li><a href="#">Action</a></li>
-          </ul>
-      
-          <select>
-            <option>log out </option>
-            <option>sign in</option>
-            <option>sign up</option>
-          </select>
-      </nav>
+       
 
     </head>
-    
     <body>
-      <img
-      src="bori.jpeg"
-      style="display:block; margin:auto; max-width: 50%; max-height: 50%;"
-      />
-
-
+      <div>
+          <!-- 상단 내비게이터 -->
+          <nav id="nav3">
+            <a href="#">My Movie</a>
+            <ul>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Animation</a></li>
+              <li><a href="#">Romance</a></li>
+              <li><a href="#">Science Fiction</a></li>
+              <li><a href="#">Action</a></li>
+            </ul>
+            <select>
+              <option><a href="#">log out</a></option>  
+              <option><a href="sign in page.html">sing in</a></option>
+              <option><a href="sign up page.html">sigin up</a></option>
+            </select>
+          </nav>
+          <div style="display:flex; justify-content:center; align-items:center;">
+            <img src="bori.jpeg" class = "poster" >
+            <div>
+              <h1 class="movie_topic">Black Panther: Wakanda Forever(2022)</h1>
+              <h2 class="movie_topic">Genre: Science Fiction, Fantasy</h2>
+            </div>
+            
+          </div>
+      </div>
+      
 
     </body>
     <style>
-      html { 
-        background: url(coding.jpg) no-repeat center fixed;
-        background-size: cover;
-        background-position: relative; 
-      }
+      
+      
     
     </style>
 
