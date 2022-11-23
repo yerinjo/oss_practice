@@ -57,7 +57,7 @@ option:hover{
   font-weight: 500;
 }
 #nav3>form {
-  position:fixed;
+  position:absolute;
   display: inline-block;
   padding-top: 20px;
   padding-left: 150px;
@@ -76,7 +76,8 @@ option:hover{
     padding: 0.5rem 0.6rem;
     border: 1px solid #9c5eb8;
     background-color: #9c5eb8;
-    color: white;
+    color: #1b2035;
+    font-weight: 500;
     border-radius: 20px;
     margin-right: 0.6rem;
     height:0%;
