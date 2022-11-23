@@ -17,6 +17,8 @@ div {
 
 option{
   padding-right: 50px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 
@@ -38,7 +40,9 @@ option:hover{
   font-weight: 900;
   position: absolute;
   left: 30px;
-  color: #fff;
+  background: linear-gradient(to right top, #2c9fbc,#c9418c);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 #nav3>ul {
@@ -49,6 +53,8 @@ option:hover{
   left: 10%;
   line-height: 80px;
   padding: 0 30px;
+  font-size: 18px;
+  font-weight: 500;
 }
 #nav3>form {
   position:fixed;
@@ -58,7 +64,7 @@ option:hover{
 }
 #nav3>form input {
    font: inherit;
-    padding: 0.2rem;
+    padding: 0.3rem;
     border-radius: 6px;
     border: 1px solid #ccc;
     width: 10rem;
@@ -73,4 +79,5 @@ option:hover{
     color: white;
     border-radius: 20px;
     margin-right: 0.6rem;
+    height:0%;
 }
