@@ -51,24 +51,26 @@ option:hover{
   padding: 0 30px;
 }
 #nav3>form {
-  position: absolute;
+  position:fixed;
   display: inline-block;
+  padding-top: 20px;
+  padding-left: 150px;
 }
 #nav3>form input {
    font: inherit;
     padding: 0.2rem;
     border-radius: 6px;
     border: 1px solid #ccc;
-    width: 8rem;
+    width: 10rem;
     max-width: 100%;
 }
 #nav3>form button{
   font: inherit;
     cursor: pointer;
     padding: 0.5rem 0.6rem;
-    border: 1px solid #40005d;
-    background-color: #40005d;
+    border: 1px solid #9c5eb8;
+    background-color: #9c5eb8;
     color: white;
-    border-radius: 12px;
+    border-radius: 20px;
     margin-right: 0.6rem;
 }
