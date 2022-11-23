@@ -1,12 +1,35 @@
-nav{width:80%;overflow:hidden;height:80px;background-color:#1b2035;margin:50px auto}
+nav{width:80%;overflow:hidden;background-color:#1b2035}
 *{padding:0;margin:0}
 ul,ol{list-style:none}
 a{text-decoration:none;color:#fff;font-size:15px}
 
+div {
+  box-sizing: content-box;
+  width: 100%;
+  color: #1b2035;
+  right: 30px;
+  padding-top: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+option{
+  padding-right: 50px;
+}
+
+
+option:hover{
+  color:#9c5eb8;
+
+}
+
+
 #nav3 {
   width: 100%;
   text-align: center;
-  padding-bottom: 10px;
+  
 }
 #nav3>h1 {
   line-height: 80px;
@@ -17,18 +40,7 @@ a{text-decoration:none;color:#fff;font-size:15px}
   left: 30px;
   color: #fff;
 }
-#nav3>select {
-  padding: 0 20px;
-  height: 30px;
-  background-color: #1b2035;
-  color: #fff;
-  right: 30px;
-  position: absolute;
-  top: 12%;
-  transform: translateY(-15px);
-  border: 2px solid #fff;
-  border-radius: 30px;
-}
+
 #nav3>ul {
   display: inline-block;
 }
